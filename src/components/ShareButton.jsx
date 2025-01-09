@@ -10,7 +10,6 @@ import {
   FaUserPlus,
   FaCamera,
 } from "react-icons/fa";
-import QRCode from "qrcode";
 import { saveContactToDevice } from "./saveContact";
 
 const ShareButton = ({ number, countryCode,logoUrl,businessName,theme, saveContactDetails }) => {

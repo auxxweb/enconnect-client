@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { QRCodeCanvas } from "qrcode.react";
 import  QRCodeStyling  from "qr-code-styling";
 
 import {
@@ -11,9 +10,7 @@ import {
   FaUserPlus,
   FaCamera,
 } from "react-icons/fa";
-import QRCode from "qrcode";
 import { saveContactToDevice } from "./saveContact";
-import html2canvas from "html2canvas";
 
 const ShareButtonHome = ({logoUrl,businessName,  }) => {
   const [showOptions, setShowOptions] = useState(false);
