@@ -1,0 +1,33 @@
+/* src/TermsAndConditions.css */
+.terms-container {
+    max-width: 90%;
+    margin: 40px auto;
+    margin-top: 600px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e7edf4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #105193;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-note {
+    margin-top: 20px;
+    font-style: italic;
+  }
+  

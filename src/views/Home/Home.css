@@ -1,0 +1,130 @@
+.home-category-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Space between cards */
+  margin: 0 auto; /* Center the container */
+  max-width: 1200px; /* Optional: limit the max-width for better control */
+  padding: 0 1rem; /* Ensure consistent padding */
+}
+
+.cat-div {
+  text-align: center;
+  flex: 1 1 auto; /* Allow cards to grow based on content */
+  width: auto; /* Card width based on content length */
+  min-width: 150px; /* Minimum width for cards */
+  max-width: 250px; /* Maximum width for cards to prevent them from growing too large */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  word-wrap: break-word; /* Ensure text wraps correctly */
+}
+
+.cat-div:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+.cat-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  margin-right: 8px;
+}
+
+.cat-text {
+  /* padding: 0.5rem; */
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  white-space: normal; /* Allow text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines of text */
+  -webkit-box-orient: vertical;
+  max-height: 3rem; /* Maximum height for two lines */
+}
+
+@media (max-width: 600px) {
+  .cat-div {
+    min-width: 100%; /* Ensure cards take full width on small screens */
+  }
+}
+
+@media (min-width: 576px) {
+  .cat-div {
+    flex: 1 1 auto; /* 3 cards per row on small screens with dynamic width based on content */
+  }
+}
+
+@media (min-width: 768px) {
+  .cat-div {
+    flex: 1 1 auto; /* 4 cards per row on medium screens with dynamic width based on content */
+  }
+}
+
+@media (min-width: 992px) {
+  .cat-div {
+    flex: 1 1 auto; /* 5 cards per row on large screens with dynamic width based on content */
+  }
+}
+
+.banner-input-div {
+  backdrop-filter: blur(15px);
+}
+.banner-input-div input {
+  padding: 15px;
+}
+* {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  background: transparent;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #105193;
+  height: 200px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(211, 211, 211, 0.6);
+  background-color: #ffffff;
+}
+.bg-theme {
+  background-color: #105193 !important;
+  color: white !important;
+}
+
+
+/* WhatsApp Button Styles */
+.whatsapp-button {
+  position: fixed;
+  bottom: 24px;
+  right: 41px;
+  background-color: #198340;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.whatsapp-button img {
+  width: 38px;
+  height: 38px;
+}
+
+.whatsapp-button:hover {
+  background-color: #217b40;
+}
