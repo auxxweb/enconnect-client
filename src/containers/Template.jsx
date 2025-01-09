@@ -24,7 +24,6 @@ import Placeholder from "/images/placeholder.jpg";
 import Loader from "../components/Loader/Loader";
 import NewsArticles from "./NewsArticles";
 import BusinessReviews from "./BusinessReviews";
-import { Globe } from "lucide-react";
 
 let items = document?.querySelectorAll(".carousel .carousel-item");
 
